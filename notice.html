@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>নোটিশ বোর্ড - XYZ উচ্চ বিদ্যালয়</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .notice-item {
+      border-left: 5px solid #198754;
+      background-color: #f9f9f9;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    .notice-item:hover {
+      background-color: #eefef3;
+    }
+    .notice-date {
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header/Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">XYZ উচ্চ বিদ্যালয়</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">হোম</a></li>
+        <li class="nav-item"><a class="nav-link" href="about-us.html">পরিচিতি</a></li>
+        <li class="nav-item"><a class="nav-link" href="teachers.html">শিক্ষকমণ্ডলী</a></li>
+        <li class="nav-item"><a class="nav-link" href="academic.html">একাডেমিক</a></li>
+        <li class="nav-item"><a class="nav-link" href="results.html">ফলাফল</a></li>
+        <li class="nav-item"><a class="nav-link" href="notice.html">নোটিশ</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">গ্যালারি</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact-us.html">যোগাযোগ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Header/Navbar End -->
+
+<!-- Notice Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">📢 বিদ্যালয়ের নোটিশ বোর্ড</h2>
+
+    <!-- Notice List -->
+    <div class="notice-item">
+      <h5>শীতকালীন ছুটি ঘোষণা</h5>
+      <p class="notice-date">প্রকাশিত: ২৮ ডিসেম্বর ২০২৪</p>
+      <p>বিদ্যালয়ের শীতকালীন ছুটি ৩০ ডিসেম্বর ২০২৪ থেকে ৫ জানুয়ারি ২০২৫ পর্যন্ত চলবে। এই সময়ে সব ক্লাস বন্ধ থাকবে।</p>
+    </div>
+
+    <div class="notice-item">
+      <h5>২০২৫ সালের বার্ষিক পরীক্ষার রুটিন</h5>
+      <p class="notice-date">প্রকাশিত: ১৫ নভেম্বর ২০২৪</p>
+      <p>বার্ষিক পরীক্ষার রুটিন প্রকাশ করা হয়েছে। শিক্ষার্থীদের রুটিন অনুযায়ী প্রস্তুতি নেওয়ার নির্দেশ দেওয়া হলো।</p>
+      <a href="pdfs/exam-routine-2025.pdf" class="btn btn-sm btn-outline-success" target="_blank">রুটিন ডাউনলোড করুন</a>
+    </div>
+
+    <div class="notice-item">
+      <h5>SSC ফর্ম ফিলআপ বিজ্ঞপ্তি</h5>
+      <p class="notice-date">প্রকাশিত: ১ অক্টোবর ২০২৪</p>
+      <p>২০২৫ সালের এসএসসি পরীক্ষার ফর্ম ফিলআপ আগামী ১০ অক্টোবর থেকে শুরু হবে। নির্ধারিত সময়ের মধ্যে ফর্ম পূরণ করতে বলা হলো।</p>
+    </div>
+
+    <!-- Add more notices here -->
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+  <div class="container">
+    <p class="mb-0">XYZ উচ্চ বিদ্যালয় &copy; 2025 | EIIN: 123456</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>গ্যালারি - XYZ উচ্চ বিদ্যালয়</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .gallery-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .gallery-img:hover {
+      transform: scale(1.03);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header/Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">XYZ উচ্চ বিদ্যালয়</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">হোম</a></li>
+        <li class="nav-item"><a class="nav-link" href="about-us.html">পরিচিতি</a></li>
+        <li class="nav-item"><a class="nav-link" href="teachers.html">শিক্ষকমণ্ডলী</a></li>
+        <li class="nav-item"><a class="nav-link" href="academic.html">একাডেমিক</a></li>
+        <li class="nav-item"><a class="nav-link" href="results.html">ফলাফল</a></li>
+        <li class="nav-item"><a class="nav-link" href="notice.html">নোটিশ</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">গ্যালারি</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact-us.html">যোগাযোগ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Header/Navbar End -->
+
+
+<!-- Gallery Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">🎓 আমাদের গ্যালারি</h2>
+    <div class="row g-4">
+
+      <!-- Image 1 -->
+      <div class="col-md-4 col-sm-6">
+        <img src="images/event-1.jpg" class="gallery-img" alt="অনুষ্ঠান ১" data-bs-toggle="modal" data-bs-target="#photoModal" onclick="showImage(this)">
+      </div>
+
+      <!-- Image 2 -->
+      <div class="col-md-4 col-sm-6">
+        <img src="images/event-2.jpg" class="gallery-img" alt="অনুষ্ঠান ২" data-bs-toggle="modal" data-bs-target="#photoModal" onclick="showImage(this)">
+      </div>
+
+      <!-- Image 3 -->
+      <div class="col-md-4 col-sm-6">
+        <img src="images/event-1.jpg" class="gallery-img" alt="অনুষ্ঠান ৩" data-bs-toggle="modal" data-bs-target="#photoModal" onclick="showImage(this)">
+      </div>
+
+      <!-- More images... -->
+    </div>
+  </div>
+</section>
+
+<!-- Modal for Enlarged Image -->
+<div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <img src="" id="modalImage" class="w-100" style="border-radius: 6px;">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">বন্ধ করুন</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+  <div class="container">
+    <p class="mb-0">XYZ উচ্চ বিদ্যালয় &copy; 2025 | EIIN: 123456</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS and Gallery Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function showImage(element) {
+    const src = element.getAttribute("src");
+    document.getElementById("modalImage").src = src;
+  }
+</script>
+
+</body>
+</html>
