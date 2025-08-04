@@ -45,24 +45,101 @@
 
 
   <!-- Section-1 Start  -->
-  <section class="bg-light py-5 text-center">
-    <div class="container">
+  <section id="hero" class="hero-section d-flex align-items-center text-white" style="background: url('images/high-school.jpg') center/cover no-repeat; height: 60vh;">
+    <div class="container text-center">
       <h1 class="display-5 fw-bold">XYZ উচ্চ বিদ্যালয়</h1>
       <p class="lead mb-4">শিক্ষা, শৃঙ্খলা ও নৈতিকতার প্রতীক</p>
-      <a href="#notice" class="btn btn-primary px-4 py-2">সাম্প্রতিক নোটিশ দেখুন</a>
+      <a href="#admission" class="btn btn-lg btn-primary me-2">Apply Now</a>
+      <a href="#about" class="btn btn-lg btn-outline-light">Learn More</a>
+
     </div>
+    <div class="overlay"></div>
   </section>
   <!-- Section-1 End  -->
 
-  <!-- Section-2 Start  -->
-  <section class="py-5 bg-white">
-    <div class="container">
-      <h2 class="mb-4">বিদ্যালয়ের সংক্ষিপ্ত ইতিহাস</h2>
-      <p>XYZ উচ্চ বিদ্যালয় ১৯৮৫ সালে প্রতিষ্ঠিত হয়। এটি একটি স্বনামধন্য শিক্ষা প্রতিষ্ঠান যা শিক্ষার পাশাপাশি নৈতিকতার
-        উপর গুরুত্ব দেয়।</p>
+  <!-- Section-2 == About Us == Start  -->
+  
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Text Content -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2 class="fw-bold text-primary mb-3">আমাদের পরিচয়</h2>
+        <p>
+          XYZ উচ্চ বিদ্যালয় ১৯৮৫ সালে প্রতিষ্ঠিত হয়। শিক্ষার মানোন্নয়ন, শৃঙ্খলা এবং মূল্যবোধ বিকাশে আমরা প্রতিশ্রুতিবদ্ধ। আমাদের বিদ্যালয় একাডেমিক ফলাফল, সহ-শিক্ষা কার্যক্রম এবং সামাজিক দায়িত্ব পালনে উল্লেখযোগ্য অবদান রেখে চলেছে।
+        </p>
+        <p>
+          লক্ষ্য: শিক্ষার্থীদের একজন আদর্শ নাগরিক হিসেবে গড়ে তোলা, যারা জ্ঞান, নৈতিকতা ও নেতৃত্বগুণে গুণান্বিত।
+        </p>
+        <a href="#contact" class="btn btn-outline-primary mt-3">যোগাযোগ করুন</a>
+      </div>
+
+      <!-- Image -->
+      <div class="col-md-6">
+        <img src="images/high-school.jpg" alt="School Building" class="img-fluid rounded shadow">
+      </div>
+
     </div>
+  </div>
+</section>
+
+  <!--   Section-2 == About Us == End  -->
+
+<!-- Section-3 == curriculam and other activities slider == Start  -->
+  <section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center">Our Programs & Activities-শিক্ষা ও সহপাঠ কার্যক্রম</h2>
+
+    <div class="swiper mySwiper1">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide position-relative overflow-hidden">
+          <a href="#"><img src="images/curriculam.jpg" class="img-fluid rounded shadow" alt="Event 1"></a>
+          <div class="for-title-position position-absolute d-flex justify-content-center align-items-center rounded-bottom">
+            <h5><a href="#" class="text-decoration-none text-white">Curriculam</a></h5>
+          </div> 
+        </div>
+
+        <div class="swiper-slide position-relative overflow-hidden">
+          <a href="#"><img src="images/Sports.jpg" class="img-fluid rounded shadow" alt="Event 1"></a>
+          <div class="for-title-position position-absolute d-flex justify-content-center align-items-center rounded-bottom">
+            <h5><a href="#" class="text-decoration-none text-white">Sports</a></h5>
+          </div> 
+        </div>
+
+        <div class="swiper-slide position-relative overflow-hidden">
+          <a href="#"><img src="images/afterschool.jpg" class="img-fluid rounded shadow" alt="Event 1"></a>
+          <div class="for-title-position position-absolute d-flex justify-content-center align-items-center rounded-bottom">
+            <h5><a href="#" class="text-decoration-none text-white">AfterSchool</a></h5>
+          </div> 
+        </div>
+
+        <div class="swiper-slide position-relative overflow-hidden">
+          <a href="#"><img src="images/events.jpg" class="img-fluid rounded shadow" alt="Event 1"></a>
+          <div class="for-title-position position-absolute d-flex justify-content-center align-items-center rounded-bottom">
+            <h5><a href="#" class="text-decoration-none text-white">Events</a></h5>
+          </div> 
+        </div>
+
+        <div class="swiper-slide position-relative overflow-hidden">
+          <a href="#"><img src="images/career.jpg" class="img-fluid rounded shadow" alt="Event 1"></a>
+          <div class="for-title-position position-absolute d-flex justify-content-center align-items-center rounded-bottom">
+            <h5><a href="#" class="text-decoration-none text-white">Career</a></h5>
+          </div> 
+        </div>
+      </div>
+
+      <!-- navigat button  -->
+      <div class="swiper-button-next first-slider-button-next"></div>
+      <div class="swiper-button-prev first-slider-button-prev"></div>
+      <!-- Pagination -->
+      <div class="swiper-pagination mt-3"></div>
+    </div>
+  </div>
   </section>
-  <!-- Section-2 End  -->
+  <!-- Section-3 == curriculam and other activities slider ==  End  -->
+
 
   <!-- Section-3 Start  -->
   <section class="py-5 bg-light">
@@ -194,7 +271,7 @@
   <!-- Section-8 End  -->
 
   <!-- Section-9 == Gallery == Start  -->
- <section class="py-5 bg-light">
+  <section class="py-5 bg-light">
   <div class="container">
     <h2 class="mb-4 text-center">গ্যালারি</h2>
 
@@ -231,8 +308,7 @@
       <div class="swiper-pagination mt-3"></div>
     </div>
   </div>
-</section>
-
+  </section>
   <!-- Section-9 == Gallery ==  End  -->
 
 
